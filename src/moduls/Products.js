@@ -9,7 +9,7 @@ const Product = (sequelize) => {
             allowNull: false
         },
         name: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(200),
             allowNull: false
         },
         quantity: {
@@ -17,10 +17,10 @@ const Product = (sequelize) => {
             //allowNull: false
         },
         description: {
-            type: DataTypes.TEXT
+            type: DataTypes.STRING(500)
         },
         image: {
-            type: DataTypes.TEXT
+            type: DataTypes.STRING(1000)
         },
         price: {
             type: DataTypes.INTEGER, // hasta un maximo de 9999.99
